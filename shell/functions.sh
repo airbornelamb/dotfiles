@@ -11,7 +11,7 @@ mcd() {
     mkdir --parents --verbose "${1}" && cd "${1}"
 }
 
-thereisfire() {
+gitfire() {
   git add -A && git commit -m 'FIRE FIRE FIRE' && git push origin fire-branch
 }
 
