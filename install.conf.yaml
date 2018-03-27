@@ -1,3 +1,33 @@
-- clean: []
-- link: {}
-- shell: []
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.antigenrc:
+    ~/.aria2/aria2.conf:
+    ~/.bash:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.dotfiles: ''
+    ~/.gitconfig:
+    ~/.gitignore_global:
+    ~/.gnupg/gpg.conf:
+    ~/.hgrc:
+    ~/.inputrc:
+    ~/.irssi:
+    ~/.pythonrc:
+    ~/.screenrc:
+    ~/.shell:
+    ~/.tmux.conf:
+    ~/.vim:
+    ~/.vimrc:
+    ~/.zsh:
+    ~/.zshrc:
+
+- shell:
+  - mkdir -p ~/bin
+  # the following have to run after linking ~/.gitconfig
+  - git update-submodules

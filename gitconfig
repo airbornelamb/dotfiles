@@ -1,0 +1,63 @@
+[user]
+	name = airbornelamb
+	email = joshua.lamb@prts.edu
+	useConfigOnly = true
+[credential]
+	helper = store
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+; just making sure those eol's stay as they are
+	autocrlf = false
+; see http://stackoverflow.com/a/22208863/6309 (Git/Bash is extremely slow in Windows 7 x64, until fix in msysgit 1.9.4)	
+	fscache = true
+[alias]
+; also check http://www.jukie.net/bart/blog/pimping-out-git-log, with author displayed
+	exec = ! "exec"
+	st = status -sb
+	save = commit -a -m "Save"
+	dh = diff HEAD~
+	dhs = diff HEAD~ --stat
+	dhw = diff HEAD~ --color-words
+	mirror-remote = ! "mr() { git push \"${2}\" \"refs/remotes/${1}/*:refs/heads/*\" && git remote set-head \"${2}\" -a; }; mr"
+	f = fetch --tags --prune
+	fa = fetch --all --tags --prune
+	pullrb = pull --rebase
+	ctags = ! "ctg() { trap \"rm -f .git/tags.$$\" EXIT; ctags --tag-relative -Rf.git/tags.$$ --exclude=.git; mv .git/tags.$$ .git/tags; }; ctg"
+	tar = ! "tar() { git archive --format tar --prefix=\"${PWD##*/}/\" HEAD -o ${1}; }; tar"
+	targz = ! "targz() { git archive --format tar.gz --prefix=\"${PWD##*/}/\" HEAD -o ${1}; }; targz"
+	zip = ! "zip() { git archive --format zip --prefix=\"${PWD##*/}/\" HEAD -o ${1}; }; zip"
+[color]
+        ui = always
+[pretty]
+	line = "%C(auto)%h%d %s %C(yellow)by %C(blue)%an %C(green)%ar"
+	compact = "%C(auto)%h %s %C(green)%ar%n %C(auto)%d%n"
+	detail = "%C(auto)%h %s%n  %C(yellow)by %C(blue)%an %C(magenta)<%ae> [%G?] %C(green)%ar%n %C(auto)%d%n"
+[merge]
+	defaultToUpstream = true
+	tool = vimdiff
+
+[pull]
+	ff = only
+
+[mergetool]
+	keepBackup = false
+
+[push]
+	default = upstream
+[diff]
+	mnemonicPrefix = true
+	wordRegex = "[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+"
+	compactionHeuristic = true
+[grep]
+	lineNumber = true
+
+[advice]
+	detachedHead = false
+	waitingForEditor = false
+
+[rebase]
+; see http://stackoverflow.com/a/30209750: git 2.6+ for git pull --rebase
+	autoStash = true
+[include]
+	path = ~/.gitconfig_local
