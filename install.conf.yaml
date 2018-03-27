@@ -7,17 +7,17 @@
 
 - link:
     ~/.antigenrc:
+    ~/.agignore:
     ~/.aria2/aria2.conf:
     ~/.bash:
     ~/.bash_profile:
     ~/.bashrc:
+    ~/.config/i3/config: i3config
     ~/.dotfiles: ''
     ~/.gitconfig:
     ~/.gitignore_global:
     ~/.gnupg/gpg.conf:
-    ~/.hgrc:
-    ~/.inputrc:
-    ~/.irssi:
+    ~/.i3status.conf:
     ~/.pythonrc:
     ~/.screenrc:
     ~/.shell:

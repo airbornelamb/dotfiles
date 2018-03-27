@@ -2,6 +2,21 @@
 
 `git clone https://github.com/airbornelamb/dotfiles.git ~/.dotfiles && ~/.dotfiles/install.sh`
 
+`dfu` will run an update
+
+Local extensions
+-------
+
+The following files will also be sourced if available:
+
+`~/.gitconfig_local`
+
+`~/.shell_local_after`
+
+`~/.bashrc_local_after`
+
+`~/.zshrc_local_after`
+
 License
 -------
 
