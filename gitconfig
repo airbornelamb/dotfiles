@@ -13,7 +13,8 @@
 	fscache = true
 [alias]
 ; also check http://www.jukie.net/bart/blog/pimping-out-git-log, with author displayed
-	exec = ! "exec"
+        cm = !git add -A && git commit -m
+        dl = !git pull --rebase --prune $@ && git submodule update --init --recursive
 	st = status -sb
 	save = commit -a -m "Save"
 	dh = diff HEAD~

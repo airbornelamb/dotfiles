@@ -8,12 +8,16 @@ dfu() {
 
 # Create a directory and cd into it
 mcd() {
-    mkdir "${1}" && cd "${1}"
+    mkdir --parents --verbose "${1}" && cd "${1}"
+}
+
+thereisfire() {
+  git add -A && git commit -m 'FIRE FIRE FIRE' && git push origin fire-branch
 }
 
 # Copy ssh key to server
 # type "copykey user@server"
-function copykey {
+copykey() {
   [ -z "$1" ] && echo 'Usage: copykey user@server' && return 1
   ssh $1 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 }
