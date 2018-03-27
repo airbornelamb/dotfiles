@@ -1,6 +1,6 @@
 
 
-`git clone https://github.com/airbornelamb/dotfiles.git ~/.dotfiles && ~/.dotfiles/install.sh`
+`git clone https://github.com/airbornelamb/dotfiles.git ~/.dotfiles && ~/.dotfiles/install`
 
 `dfu` will run an update
 
@@ -16,6 +16,8 @@ The following files will also be sourced if available:
 `~/.bashrc_local_after`
 
 `~/.zshrc_local_after`
+
+`~/bin` if it exists, so that private bin files can remain untracked
 
 License
 -------
