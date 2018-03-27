@@ -1,0 +1,35 @@
+#!/bin/bash
+# Backup Script
+
+SOURCEDIR=$HOME
+DESTDIR=/mnt/backup
+
+/usr/bin/rsync -avz --exclude={\
+.adobe,\
+.android,\
+.atom,\
+.cache,\
+.config/syncthing,\
+.cups,\
+.defcon,\
+.hplip,\
+.macromedia,\
+.mail,\
+.offlineimap,\
+.PlayOnLinux,\
+.wine,\
+.local/share/Steam,\
+.local/share/Trash,\
+.local/share/xorg,\
+.mozilla,\
+.thunderbird,\
+.zsh_history,\
+Downloads,\
+Music,\
+Pictures,\
+virtualbox\
+} $SOURCEDIR $DESTDIR
+
+# Need to change it to pass input $1 $2
+# Need to handle error output
+echo "Backup completed `date`" >> $HOME/backupreport.txt

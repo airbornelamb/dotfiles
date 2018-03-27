@@ -2,16 +2,15 @@
 
 alias more=less
 alias :q='exit'
-alias rm='trash' # Use `trash` program instead of sending anything to black hole.
 alias mkdir='mkdir --parents' # Make parent directories as needed.
 alias du='du --max-depth=1 --si' # Display size of files and folders under current directory.
-alias df='df --all --si --print-type' # Display all disk usage statistics with SI units, FS types.
+alias df='df -h --print-type' # Disk usage with FS types
 alias f='fzf --preview "head -100 {}"'
-alias fo='xdg-open "$PWD"' # Open current directory onto GUI file browser.
+alias fo='nohup xdg-open "$PWD" &' # Open current directory onto GUI file browser.
 alias path="echo $PATH | cut --delimiter=':' --fields=1- --output-delimiter=$'\n'"
 
 alias clbin="curl -F 'clbin=<-' https://clbin.com"
-alias myip='curl http://checkip.amazonaws.com/; curl ipinfo.io'
+alias myip='curl http://checkip.amazonaws.com' # curl ipinfo.io would also give more info
 alias wttr='curl wttr.in/49418'
 alias removechars='sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"'
 alias darn='sudo $(history -p \!\!)'

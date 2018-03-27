@@ -100,7 +100,7 @@ mountmac() {
   local macip="192.168.56.101"
   local macshare="Downloads"
   local mntpoint="/mnt/mac"
-  if [ -d $mntpoint ] ; then
+  if [ ! -d $mntpoint ] ; then
     sudo mkdir -p $mntpoint
     sudo chown -R $USER $mntpoint
   fi
