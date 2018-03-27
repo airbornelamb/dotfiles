@@ -23,6 +23,7 @@ DESTDIR=/mnt/backup
 .local/share/xorg,\
 .mozilla,\
 .thunderbird,\
+.wine,\
 .zsh_history,\
 Downloads,\
 Music,\

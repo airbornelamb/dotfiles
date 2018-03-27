@@ -108,3 +108,10 @@ mountmac() {
   cd $mntpoint
 }
 
+mountiso() {
+  [ -z "$1" ] && echo "Please specify an ISO file to mount" && return 1
+  mkdir -p /tmp/iso
+  sudo mount -o loop $1 /tmp/iso
+  cd /tmp/iso
+}
+

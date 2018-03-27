@@ -26,6 +26,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [mkdir -p $HOME/.wine, Making Wine directory]
   - command: vim +PlugUpdate +PlugUpgrade +qall
     stdin: true
     stdout: true

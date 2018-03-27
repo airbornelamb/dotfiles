@@ -1,5 +1,9 @@
 export EDITOR=vim
 
+# Wine
+export WINEPREFIX=~/.wine
+export WINEARCH=win32
+
 # fzf
 export FZF_DEFAULT_COMMAND="rg \
 	--files \
