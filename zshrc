@@ -5,6 +5,9 @@
 # Settings
 source ~/.shell/settings.zsh
 
+# Custom prompt
+source ~/.shell/prompt.zsh
+
 # Bootstrap
 source ~/.shell/bootstrap.sh
 
@@ -29,9 +32,6 @@ source ~/.shell/functions.sh
 
 # Exports
 source ~/.shell/exports.sh
-
-# Custom prompt
-#source ~/.shell/prompt.zsh
 
 # Allow local customizations in the ~/.shell_local_after file
 if [ -f ~/.shell_local_after ]; then
