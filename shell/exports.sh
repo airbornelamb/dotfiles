@@ -1,8 +1,8 @@
-export EDITOR=vim
+export EDITOR="vim"
 
 # Wine
-export WINEPREFIX=~/.wine
-export WINEARCH=win32
+export WINEPREFIX="~/.wine"
+export WINEARCH="win32"
 
 # fzf
 export FZF_DEFAULT_COMMAND="rg \
