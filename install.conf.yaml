@@ -17,6 +17,8 @@
     ~/.gitignore_global:
     ~/.gnupg/gpg.conf:
     ~/.i3status.conf:
+    ~/.nanorc: nanorc
+    ~/.nano: plugins/nanorc
     ~/.pythonrc:
     ~/.screenrc:
     ~/.shell: shell
