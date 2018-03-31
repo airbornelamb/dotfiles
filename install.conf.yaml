@@ -17,6 +17,7 @@
     ~/.gitignore_global:
     ~/.gnupg/gpg.conf:
     ~/.i3status.conf:
+    ~/.local/share/applications/simple-terminal.desktop: local/simple-terminal.desktop
     ~/.nanorc: nanorc
     ~/.nano: plugins/nanorc
     ~/.pythonrc:
