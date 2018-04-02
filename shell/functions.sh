@@ -22,6 +22,11 @@ copykey() {
   ssh $1 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 }
 
+synctunnel() {
+	[ -z "$1" ] && echo 'Enter synctunnel HOSTNAME/IP to bind remote syncthing to local 9999 port' && return 1
+	ssh -L 9999:localhost:8384 $1
+}
+
 # ex - archive extractor
 # usage: ex <file>
 ex ()

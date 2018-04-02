@@ -12,6 +12,7 @@ alias path="echo $PATH | cut --delimiter=':' --fields=1- --output-delimiter=$'\n
 alias clbin="curl -F 'clbin=<-' https://clbin.com"
 alias myip='curl http://checkip.amazonaws.com' # curl ipinfo.io would also give more info
 alias wttr='curl wttr.in/49418'
+alias todo="$EDITOR ~/Sync/todo/todo.txt"
 alias removechars='sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"'
 alias darn='sudo $(history -p \!\!)'
 alias listgroups='cut -d: -f1 /etc/group'
