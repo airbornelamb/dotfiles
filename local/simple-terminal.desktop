@@ -2,7 +2,7 @@
 Name=Simple Terminal
 GenericName=Terminal
 Comment=standard terminal emulator for the X window system
-Exec=st -t "Suckless Terminal" -f "DejaVu Sans Mono:style=Semibold:size=12" -g "80x24"
+Exec=st -t "Suckless Terminal" -f "Liberation Mono:style=Regular:size=16" -g "80x24"
 Terminal=false
 Type=Application
 Encoding=UTF-8
