@@ -9,8 +9,10 @@ alias f='fzf --preview "head -100 {}"'
 alias fo='nohup xdg-open "$PWD" &' # Open current directory onto GUI file browser.
 alias path="echo $PATH | cut --delimiter=':' --fields=1- --output-delimiter=$'\n'"
 
+alias myip="curl ifconfig.co" # other options are ipinfo.io or checkip.amazonaws.com
+alias myipfull="curl ifconfig.co/json"
+
 alias clbin="curl -F 'clbin=<-' https://clbin.com"
-alias myip='curl https://ifconfig.co' # other options are ipinfo.io or checkip.amazonaws.com
 alias wttr='curl wttr.in/49418'
 alias todo="$EDITOR ~/Sync/todo/todo.txt"
 alias removechars='sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"'
