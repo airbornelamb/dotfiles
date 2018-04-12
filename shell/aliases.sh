@@ -8,6 +8,7 @@ alias df='df -h --print-type' # Disk usage with FS types
 alias f='fzf --preview "head -100 {}"'
 alias fo='nohup xdg-open "$PWD" &' # Open current directory onto GUI file browser.
 alias path="echo $PATH | cut --delimiter=':' --fields=1- --output-delimiter=$'\n'"
+alias journal="$EDITOR ~/Sync/journal/"$(date +"%Y-%m-%d")".txt"
 
 alias myip="curl ifconfig.co" # other options are ipinfo.io or checkip.amazonaws.com
 alias myipfull="curl ifconfig.co/json"
