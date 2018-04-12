@@ -31,6 +31,7 @@ portcheck() {
 	[ -z "$1" ] && echo 'Enter "portcheck PORTNUM" to see if it is accessible from the internet' && return 1
 	curl ifconfig.co/port/$1
 }
+alias checkport=portcheck
 
 # ex - archive extractor
 # usage: ex <file>
