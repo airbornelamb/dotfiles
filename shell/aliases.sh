@@ -10,12 +10,15 @@ alias fo='nohup xdg-open "$PWD" &' # Open current directory onto GUI file browse
 alias path="echo $PATH | cut --delimiter=':' --fields=1- --output-delimiter=$'\n'"
 
 alias clbin="curl -F 'clbin=<-' https://clbin.com"
-alias myip='curl http://checkip.amazonaws.com' # curl ipinfo.io would also give more info
+alias myip='curl https://ifconfig.co' # other options are ipinfo.io or checkip.amazonaws.com
 alias wttr='curl wttr.in/49418'
 alias todo="$EDITOR ~/Sync/todo/todo.txt"
 alias removechars='sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"'
 alias darn='sudo $(history -p \!\!)'
 alias listgroups='cut -d: -f1 /etc/group'
+
+alias sysenabled="systemctl list-unit-files --state=enabled"
+alias sysrunning="systemctl list-units --type=service --state=running"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -23,7 +26,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
-
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
