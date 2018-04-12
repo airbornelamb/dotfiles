@@ -27,6 +27,11 @@ synctunnel() {
 	ssh -L 9999:localhost:8384 $1
 }
 
+portcheck() {
+	[ -z "$1" ] && echo 'Enter "portcheck PORTNUM" to see if it is accessible from the internet' && return 1
+	curl ifconfig.co/port/$1
+}
+
 # ex - archive extractor
 # usage: ex <file>
 ex ()
