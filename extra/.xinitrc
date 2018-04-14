@@ -31,8 +31,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# Here Xfce is kept as default
-session=${1:-xfce}
+# Here Openbox is kept as default
+session=${1:-openbox}
 
 case $session in
     i3|i3wm           ) exec i3;;
