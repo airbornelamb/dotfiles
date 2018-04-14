@@ -45,3 +45,9 @@ fi
 
 # fzf completions
 [[ -f ~/.fzf.zsh ]] && . ~/.fzf.zsh
+
+# Autostart X at login, make sure to point xinitrc to correct window manager
+#if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+#  exec startx
+#fi
+
