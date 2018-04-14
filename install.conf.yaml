@@ -25,6 +25,8 @@
     ~/.shell: shell
     ~/.tmux.conf:
     ~/.vimrc:
+    ~/.xinitrc:
+    ~/.Xresources:
     ~/.zshrc:
 
 - shell:
