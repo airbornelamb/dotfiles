@@ -10,6 +10,7 @@
     ~/.agignore:
     ~/.aria2/aria2.conf:
     ~/.bashrc:
+    ~/.csl: csl
     ~/.config/i3/config: i3config
     ~/.config/syncthing/.stignoreglobal: stignoreglobal
     ~/.config/less/lessrc: lessrc
@@ -20,6 +21,7 @@
     ~/.local/share/applications/simple-terminal.desktop: local/simple-terminal.desktop
     ~/.nanorc: nanorc
     ~/.nano: plugins/nanorc
+    ~/.pandoc: pandoc
     ~/.pythonrc:
     ~/.screenrc:
     ~/.shell: shell
