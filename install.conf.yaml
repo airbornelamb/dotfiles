@@ -10,7 +10,6 @@
     ~/.agignore:
     ~/.aria2/aria2.conf:
     ~/.bashrc:
-    ~/.csl: csl
     ~/.config/i3/config: i3config
     ~/.config/syncthing/.stignoreglobal: stignoreglobal
     ~/.config/less/lessrc: lessrc
