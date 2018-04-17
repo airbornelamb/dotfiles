@@ -2,6 +2,7 @@
 
 alias more=less
 alias :q='exit'
+alias l="exa --all --long --color=always --group-directories-first" #use exa for directory listing
 alias mkdir='mkdir --parents' # Make parent directories as needed.
 alias du='du --max-depth=1 --si' # Display size of files and folders under current directory.
 alias df='df -h --print-type' # Disk usage with FS types
