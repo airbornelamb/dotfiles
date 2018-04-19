@@ -12,11 +12,6 @@ if [ -d "$HOME/.fzf/bin" ] ; then
     PATH="$HOME/.fzf/bin:$PATH"
 fi
 
-# Source lessrc
-if [ -f ~/.lessrc ]; then
-    source ~/.lessrc
-fi
-
 # CHECK DEPENDENCIES BLOCK
 
 command -v wget >/dev/null 2>&1 || { echo "I require wget but it's not installed." >&2; }

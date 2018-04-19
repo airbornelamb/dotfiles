@@ -1,4 +1,6 @@
 export EDITOR="vim"
+export LESS='-R'
+export LESSOPEN='|pygmentize -g %s'
 
 # Wine
 export WINEPREFIX="~/.wine"
