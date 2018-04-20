@@ -24,14 +24,14 @@ fi
 # External settings
 source ~/.shell/external.sh
 
+# Exports
+source ~/.shell/exports.sh
+
 # Aliases
 source ~/.shell/aliases.sh
 
 # Functions
 source ~/.shell/functions.sh
-
-# Exports
-source ~/.shell/exports.sh
 
 # Allow local customizations in the ~/.shell_local_after file
 if [ -f ~/.shell_local_after ]; then
