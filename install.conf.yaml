@@ -12,6 +12,7 @@
     ~/.bashrc:
     ~/.config/i3/config: i3config
     ~/.config/syncthing/.stignoreglobal: stignoreglobal
+    ~/.config/zathura/zathurarc:
     ~/.gitconfig:
     ~/.gitignore_global:
     ~/.gnupg/gpg.conf:
