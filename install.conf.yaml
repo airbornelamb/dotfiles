@@ -24,6 +24,7 @@
     ~/.pythonrc:
     ~/.screenrc:
     ~/.shell: shell
+    ~/xrdb/color: xrdb/color
     ~/.tmux.conf:
     ~/.vimrc:
     ~/.xinitrc:
