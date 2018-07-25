@@ -96,6 +96,9 @@ let g:rg_command = '
 
 command! -bang -nargs=* F call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)
 
+" Allow saving of files using :w!! as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 "Key mappings
 nnoremap <F5> :Goyo<cr>
 nnoremap <F6> :UndotreeToggle<cr>
