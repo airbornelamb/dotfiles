@@ -131,6 +131,12 @@ mountiso() {
   cd /tmp/iso
 }
 
+killdocker() {
+  docker kill $(docker ps -q)
+  docker rm $(docker ps -a -q)
+  docker rmi $(docker images -q)
+}
+
 transfer() { 
     # check arguments
     if [ $# -eq 0 ]; then 
