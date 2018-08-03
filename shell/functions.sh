@@ -131,6 +131,13 @@ mountiso() {
   cd /tmp/iso
 }
 
+mountfat() {
+  [ -z "$1" ] && echo "Specify device, such as /dev/sda" && return 1
+  mkdir -p /mnt/usb
+  sudo mount -t vfat $1 /mnt/usb -o rw,uid=$USER,gid=$UID
+  cd /tmp/iso
+}
+
 killdocker() {
   docker kill $(docker ps -q)
   docker rm $(docker ps -a -q)
