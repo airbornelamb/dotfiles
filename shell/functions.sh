@@ -132,7 +132,7 @@ mountiso() {
 }
 
 mountfat() {
-  [ -z "$1" ] && echo "Specify device, such as /dev/sda" && return 1
+  [ -z "$1" ] && echo "Specify device and partition, such as /dev/sdb1" && return 1
   mkdir -p /mnt/usb
   sudo mount -t vfat $1 /mnt/usb -o rw,uid=$USER,gid=$UID
   cd /tmp/iso
