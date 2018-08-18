@@ -24,7 +24,7 @@ copykey() {
 
 sshpermissions() {
   echo 'Setting permissions for ssh folder and keys'
-  chmod 700 ~/.ssh && chmod 600 ~/.ssh/*
+  chmod 700 ~/.ssh && chmod 600 ~/.ssh/* && chmod 644 ~/.ssh/id_rsa.pub
 }
 
 synctunnel() {
