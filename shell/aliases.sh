@@ -22,6 +22,7 @@ alias todo="$EDITOR ~/Sync/todo/todo.txt"
 alias removechars='sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"'
 alias darn='sudo $(history -p \!\!)'
 alias listgroups='cut -d: -f1 /etc/group'
+alias listusers='cut -d: -f1 /etc/passwd'
 
 alias sysenabled="systemctl list-unit-files --state=enabled"
 alias sysrunning="systemctl list-units --type=service --state=running"
