@@ -12,6 +12,11 @@ if [ -d "$HOME/.fzf/bin" ] ; then
     PATH="$HOME/.fzf/bin:$PATH"
 fi
 
+# set PATH to include Go binary if it is installed
+if [ -d "/usr/local/go/bin" ] ; then
+    PATH="/usr/local/go/bin:$PATH"
+fi
+
 # CHECK DEPENDENCIES BLOCK
 
 command -v wget >/dev/null 2>&1 || { echo "I require wget but it's not installed." >&2; }
