@@ -14,7 +14,7 @@ alias variables=exports
 alias journal="$EDITOR ~/Sync/journal/"$(date +"%Y-%m-%d")".txt"
 
 alias myip="curl ifconfig.co" # other options are ipinfo.io or checkip.amazonaws.com
-alias myipfull="curl ifconfig.co/json"
+alias myipfull="curl ipinfo.io"
 
 alias clbin="curl -F 'clbin=<-' https://clbin.com"
 alias wttr='curl wttr.in/49418'
