@@ -1,9 +1,12 @@
 
 # Update dotfiles
 dfu() {
-    (
-        cd ~/.dotfiles && git pull --ff-only && ./install -q
-    )
+    cd ~/.dotfiles && git pull --ff-only && ./install -q
+}
+
+# Prints local lan ip
+mylanip() {
+    echo "$(ip route get 8.8.8.8 | awk '{ print $NF; exit }')"
 }
 
 # Create a directory and cd into it
