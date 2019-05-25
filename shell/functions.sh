@@ -4,6 +4,12 @@ dfu() {
     cd ~/.dotfiles && git pull --ff-only && ./install -q
 }
 
+# Post to hastebin, can change to self-hosted url
+haste() {
+    a=$(cat); curl -X POST -s -d "$a" https://hastebin.com/documents | awk -F '"' '{print "https://hastebin.com/"$4}';
+}
+
+
 # Prints local lan ip
 mylanip() {
     echo "$(ip route get 8.8.8.8 | awk '{ print $NF; exit }')"
