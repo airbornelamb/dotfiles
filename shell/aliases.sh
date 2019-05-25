@@ -17,7 +17,7 @@ alias myip="curl ifconfig.co" # other options are ipinfo.io or checkip.amazonaws
 alias myipfull="curl ipinfo.io"
 
 alias clbin="curl -F 'clbin=<-' https://clbin.com"
-alias wttr='curl wttr.in/49418'
+alias wttr='curl wttr.in/30909'
 alias todo="$EDITOR ~/Sync/todo/todo.txt"
 alias removechars='sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"'
 alias darn='sudo $(history -p \!\!)'
