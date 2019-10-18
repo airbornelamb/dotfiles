@@ -18,6 +18,7 @@ alias myipfull="curl ipinfo.io"
 
 alias clbin="curl -F 'clbin=<-' https://clbin.com"
 alias wttr='curl wttr.in/30909'
+alias serveo="ssh -R 80:localhost:3000 serveo.net"
 alias todo="$EDITOR ~/Sync/todo/todo.txt"
 alias removechars='sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"'
 alias darn='sudo $(history -p \!\!)'
